@@ -6,7 +6,9 @@
   *
   * Return: Nothing
   */
+
 void print_number(int n)
+
 {
 	unsigned int x;
 
