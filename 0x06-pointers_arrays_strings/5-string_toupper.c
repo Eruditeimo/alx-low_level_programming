@@ -1,20 +1,21 @@
 #include "main.h"
 /**
- * reverse_array - reverse array
- * @a:array
- * @n:integer
- * Return:void
+ * string_toupper - change lowercase to uppercase
+ * @s:string
+ * Return:char
  */
-void reverse_array(int *a, int n)
+char *string_toupper(char *s)
 {
-int i, c;
 
-for (i = 0; (i < (n - 1) / 2); i++)
+	int i;
+
+i = 0;
+	while (*(s + i))
 	{
-	c = a[i];
-	a[i] = a[n - 1 - i];
-	a[n - 1 - i] = c;
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
+		i++;
 	}
+	return (s);
 }
-Footer
-© 2022 GitHub, Inc. 
+/*Richie ICT */ 
