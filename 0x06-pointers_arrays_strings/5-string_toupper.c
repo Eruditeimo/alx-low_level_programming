@@ -4,6 +4,7 @@
  * @s:string
  * Return:char
  */
+
 char *string_toupper(char *s)
 {
 
@@ -18,4 +19,4 @@ i = 0;
 	}
 	return (s);
 }
-/*Richie ICT */ 
+/*Richie ICT */
